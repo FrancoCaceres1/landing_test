@@ -1,0 +1,112 @@
+.firstSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  background-image: url(../../assets/orange.jpg);
+  background-position: center center;
+  padding: 1rem;
+}
+
+.titleContainer {
+  background-color: rgba(184, 98, 19, 0.63);
+  padding: 0.5rem;
+}
+
+.title {
+  color: #f2f2f2;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.textContainer {
+  background-color: rgba(184, 98, 19, 0.63);
+  padding: 0.5rem;
+}
+
+.text {
+  color: #f2f2f2;
+  font-weight: 600;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  background-color: rgba(156, 78, 4, 0.63);
+  padding: 2rem;
+  width: 100%;
+}
+
+.titleContainer {
+  width: 100%;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.3rem;
+  width: 100%;
+}
+
+.label {
+  color: #f2f2f2;
+  width: 100%;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  cursor: text;
+  padding: 0.7rem 1rem;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+.cvButton {
+  padding: 0.5rem;
+  background-color: rgb(224, 224, 224);
+  cursor: pointer;
+  border-radius: 0.2rem;
+  border: none;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.cvButton:hover {
+  background-color: rgb(143, 143, 143);
+  color: #f2f2f2;
+}
+
+.sendButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  width: 100%;
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: rgb(40, 110, 216);
+  color: #f2f2f2;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.sendButton:hover {
+  background-color: rgb(16, 71, 155);
+}
+
+.sendButton span svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

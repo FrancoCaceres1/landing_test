@@ -3,6 +3,7 @@ import Www from "./assets/www.jpg";
 import { HiOutlinePlusCircle } from "react-icons/hi";
 import styles from "./App.module.css";
 import Connect from "./components/connect/Connect";
+import HiringForm from "./components/hiringForm/HiringForm";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         </div>
       </section>
       <Connect />
+      <HiringForm />
     </main>
   );
 }
