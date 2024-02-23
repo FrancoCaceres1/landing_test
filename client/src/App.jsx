@@ -23,6 +23,17 @@ function App() {
           </div>
         </div>
       </section>
+      <section className={styles.secondSection}>
+        <div className={styles.gradientOverlay}></div>
+        <div className={styles.secondSectionContainer}>
+          <p className={styles.secondText}>
+            Pagá Online tu Servicio de Internet IQNet
+          </p>
+          <button className={styles.secondButton}>
+            INGRESÁ AQUÍ A LA ZONA DE PAGO
+          </button>
+        </div>
+      </section>
     </main>
   );
 }
