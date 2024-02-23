@@ -1,13 +1,28 @@
-import { IoMenu } from "react-icons/io5";
-import { FaWhatsapp } from "react-icons/fa";
-import styles from "./App.module.css";
 import Header from "./components/header/Header";
+import Www from "./assets/www.jpg";
+import { HiOutlinePlusCircle } from "react-icons/hi";
+import styles from "./App.module.css";
 
 function App() {
   return (
     <main>
       <Header />
-      <section></section>
+      <section className={styles.firstSection}>
+        <div className={styles.imageContainer}>
+          <img src={Www} alt="www" className={styles.imageWww} />
+        </div>
+        <div className={styles.textButtonContainer}>
+          <p className={styles.textButtonParagraph}>
+            Internet y Televisión HD Por Fibra Óptica
+          </p>
+          <div className={styles.buttonContainer}>
+            <button className={styles.textButton}>
+              <HiOutlinePlusCircle />
+              <p>MÁS INFORMACIÓN AQUÍ</p>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
