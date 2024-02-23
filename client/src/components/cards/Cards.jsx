@@ -1,0 +1,43 @@
+import PropTypes from "prop-types";
+import styles from "./Cards.module.css";
+
+function Cards(props) {
+  Cards.propTypes = {
+    title1: PropTypes.string.isRequired,
+    title2: PropTypes.string.isRequired,
+    edge: PropTypes.bool.isRequired,
+    text: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
+  };
+
+  return (
+    <section
+      style={{
+        backgroundColor: props.color,
+      }}
+      className={styles.cardSection}
+    >
+      <div className={styles.container}>
+        {props.edge && (
+          <span className={styles.edgeContainer}>
+            <p className={styles.edgeText}>FIBRA</p>
+          </span>
+        )}
+        <div className={styles.titleContainer}>
+          <h2 className={styles.title}>
+            {props.title1} <br />
+            {props.title2}
+          </h2>
+        </div>
+        <div className={styles.textContainer}>
+          <p className={styles.text}>{props.text}</p>
+        </div>
+        <div className={styles.buttonContainer}>
+          <button className={styles.button}>MAS INFO</button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Cards;
