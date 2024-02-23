@@ -40,6 +40,7 @@ header {
 }
 
 .listButtonContainer {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,8 +71,42 @@ header {
   cursor: pointer;
 }
 
-.listButton svg path{
+.listButton svg path {
   cursor: pointer;
+}
+
+.listContainer {
+  position: absolute;
+  width: 100%;
+  background-color: #dadada;
+  bottom: -13.2rem;
+  -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.75);
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.listItem {
+  cursor: pointer;
+  width: 100%;
+  transition: 0.2s ease;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.listItem:hover {
+  background-color: #414040;
+  color: #f2f2f2;
 }
 
 .infoHeaderContainer {

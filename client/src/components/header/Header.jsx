@@ -1,8 +1,16 @@
+import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
+import { FaAngleUp } from "react-icons/fa6";
 import styles from "./Header.module.css";
 
 function Header() {
+  const [opened, setOpened] = useState(false);
+
+  const handlerOpenMenu = () => {
+    setOpened(!opened);
+  };
+
   return (
     <header>
       <section className={styles.titleSection}>
@@ -10,9 +18,19 @@ function Header() {
           <h2 className={styles.title}>IQNet</h2>
         </div>
         <div className={styles.listButtonContainer}>
-          <button className={styles.listButton}>
-            <IoMenu />
+          <button className={styles.listButton} onClick={handlerOpenMenu}>
+            {opened ? <FaAngleUp /> : <IoMenu />}
           </button>
+          {opened && (
+            <div className={styles.listContainer}>
+              <ul className={styles.list}>
+                <li className={styles.listItem}>Inicio</li>
+                <li className={styles.listItem}>Nuestros Servicios</li>
+                <li className={styles.listItem}>Planes y Precios</li>
+                <li className={styles.listItem}>Contacto</li>
+              </ul>
+            </div>
+          )}
         </div>
       </section>
       <section className={styles.infoHeaderContainer}>
