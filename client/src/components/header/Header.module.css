@@ -1,0 +1,105 @@
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.titleSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  gap: 1rem;
+  width: 100%;
+  top: 0;
+  padding: 1.2rem;
+  -webkit-box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: 3.5rem;
+  color: #414040;
+}
+
+.listButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.listButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.1rem 0;
+  cursor: pointer;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.listButton svg {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.listButton svg path{
+  cursor: pointer;
+}
+
+.infoHeaderContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(228, 148, 0);
+  margin-top: 9.8rem;
+  font-size: 0.8rem;
+  width: 100%;
+  padding: 1.3rem 0;
+  font-size: 0.75rem;
+}
+
+.containerZone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.line {
+  display: flex;
+  width: 0.3rem;
+  background-color: #f2f2f2;
+  height: 4.6rem;
+}
+
+.titleZone {
+  color: #f2f2f2;
+}
+
+.numberCotainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  color: #f2f2f2;
+}
