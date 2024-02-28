@@ -1,0 +1,119 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../assets/orange.jpg);
+}
+
+.titleContainer {
+  padding: 5rem 3rem;
+  width: 100%;
+  backdrop-filter: blur(2px);
+}
+
+.title {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #f2f2f2;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.firstSection {
+  border-bottom: 2px solid #e49400;
+}
+
+.firstSubtitleContainer {
+  padding: 4rem 0.5rem;
+}
+
+.firstSubtitle {
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1;
+  color: #e49400;
+  text-align: center;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.textContainer {
+  padding: 3rem 1rem;
+}
+
+.textContainer p {
+  padding: 1rem 0;
+}
+
+.p {
+  font-weight: 600;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 3rem;
+}
+
+.pricesButton {
+  padding: 1rem;
+  background-color: #e49400;
+  border: none;
+  border-radius: 0.3rem;
+  font-weight: 600;
+  color: #f2f2f2;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.pricesButton:hover {
+  background-color: #946000;
+}
+
+.secondSubtitleContainer {
+  padding: 4rem 0.5rem;
+}
+
+.secondSubtitle {
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1;
+  color: #e49400;
+  text-align: center;
+}
+
+.listContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 3rem;
+}
+
+.list {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 1rem;
+ width: 100%;
+ padding-bottom: 3rem;
+}
+
+.list li {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
