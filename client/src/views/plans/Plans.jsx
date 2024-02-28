@@ -29,11 +29,11 @@ function Plans() {
             color={"#E49400"}
           />
           <Card
-            title1={"TERCER PLAN"}
+            title1={"CUARTO PLAN"}
             title2={"FIBRA ÓPTICA"}
             price={"23203"}
             text={"Lorem ipsum dolor sit amet adipisicing elit. Explicabo?"}
-            color={"#0E0F0F"}
+            color={"#2c2c2c"}
           />
         </div>
       </section>
@@ -43,11 +43,11 @@ function Plans() {
         </div>
         <div className={styles.cardsContainer}>
           <Card
-            title1={"CUARTO PLAN"}
+            title1={"TERCER PLAN"}
             title2={"POR ANTENA"}
             price={"11253"}
             text={"Lorem ipsum dolor sit amet adipisicing elit. Explicabo?"}
-            color={"#2c2c2c"}
+            color={"#0E0F0F"}
           />
         </div>
       </section>

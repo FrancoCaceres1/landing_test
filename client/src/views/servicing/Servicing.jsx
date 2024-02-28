@@ -1,7 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import Fibra from "../../assets/fibra.jpg";
 import styles from "./Servicing.module.css";
 
 function Servicing() {
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate("/plans");
+  };
+
   return (
     <section>
       <div className={styles.headerContainer}>
@@ -54,7 +61,7 @@ function Servicing() {
           </p>
         </div>
         <div className={styles.buttonContainer}>
-          <button className={styles.pricesButton}>
+          <button className={styles.pricesButton} onClick={handleNavigate}>
             VER NUESTRO PLANES Y PRECIOS
           </button>
         </div>
