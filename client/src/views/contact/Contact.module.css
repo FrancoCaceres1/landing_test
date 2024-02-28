@@ -1,0 +1,24 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../assets/orange.jpg);
+}
+
+.titleContainer {
+  padding: 5rem 3rem;
+  width: 100%;
+  backdrop-filter: blur(2px);
+}
+
+.title {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #f2f2f2;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.formContainer {
+  padding: 2rem 0;
+}

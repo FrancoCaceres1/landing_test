@@ -53,9 +53,24 @@ function Header() {
                 >
                   Inicio
                 </li>
-                <li className={styles.listItem} onClick={() => handleNavigate("/services")}>Nuestros Servicios</li>
-                <li className={styles.listItem} onClick={() => handleNavigate("/plans")}>Planes y Precios</li>
-                <li className={styles.listItem}>Contacto</li>
+                <li
+                  className={styles.listItem}
+                  onClick={() => handleNavigate("/services")}
+                >
+                  Nuestros Servicios
+                </li>
+                <li
+                  className={styles.listItem}
+                  onClick={() => handleNavigate("/plans")}
+                >
+                  Planes y Precios
+                </li>
+                <li
+                  className={styles.listItem}
+                  onClick={() => handleNavigate("/contact")}
+                >
+                  Contacto
+                </li>
               </ul>
             </div>
           )}

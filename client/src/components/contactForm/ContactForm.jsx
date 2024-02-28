@@ -1,21 +1,9 @@
 import { RiMailSendLine } from "react-icons/ri";
-import styles from "./HiringForm.module.css";
+import styles from "./ContactForm.module.css";
 
-function HiringForm() {
+function ContactForm() {
   return (
     <section className={styles.firstSection}>
-      <div className={styles.titleContainer}>
-        <h2 className={styles.title}>
-          Trabajá con <br /> nosotros
-        </h2>
-      </div>
-      <div className={styles.textContainer}>
-        <p className={styles.text}>
-          Si querés formar parte de nuestro equipo administrativo, de ventas o
-          de soporte técnico, completá el formulario y adjuntanos tu CV así te
-          incorporamos a nuestra base.
-        </p>
-      </div>
       <form className={styles.form}>
         <div className={styles.inputContainer}>
           <label htmlFor="" className={styles.label}>
@@ -49,9 +37,13 @@ function HiringForm() {
         </div>
         <div className={styles.inputContainer}>
           <label htmlFor="" className={styles.label}>
-            Sube Aquí Tu CV
+            Asunto
           </label>
-          <button className={styles.cvButton}>Seleccionar archivo</button>
+          <textarea
+            type="text"
+            placeholder="Deje su consulta aqui..."
+            className={styles.input}
+          />
         </div>
         <div className={styles.inputContainer}>
           <button className={styles.sendButton}>
@@ -66,4 +58,4 @@ function HiringForm() {
   );
 }
 
-export default HiringForm;
+export default ContactForm;
