@@ -1,15 +1,38 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaAngleUp } from "react-icons/fa6";
 import styles from "./Header.module.css";
 
 function Header() {
+  const menuRef = useRef(null);
+  const navigate = useNavigate();
   const [opened, setOpened] = useState(false);
 
-  const handlerOpenMenu = () => {
+  const handleButtonClick = (event) => {
+    event.stopPropagation();
     setOpened(!opened);
   };
+
+  const handleNavigate = (dir) => {
+    navigate(dir);
+    setOpened(false);
+  };
+
+  const handleCloseMenu = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target) && opened) {
+      setOpened(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleCloseMenu);
+
+    return () => {
+      document.removeEventListener("click", handleCloseMenu);
+    };
+  }, [opened]);
 
   return (
     <header>
@@ -18,13 +41,18 @@ function Header() {
           <h2 className={styles.title}>IQNet</h2>
         </div>
         <div className={styles.listButtonContainer}>
-          <button className={styles.listButton} onClick={handlerOpenMenu}>
+          <button className={styles.listButton} onClick={handleButtonClick}>
             {opened ? <FaAngleUp /> : <IoMenu />}
           </button>
           {opened && (
-            <div className={styles.listContainer}>
+            <div ref={menuRef} className={styles.listContainer}>
               <ul className={styles.list}>
-                <li className={styles.listItem}>Inicio</li>
+                <li
+                  className={styles.listItem}
+                  onClick={() => handleNavigate("/")}
+                >
+                  Inicio
+                </li>
                 <li className={styles.listItem}>Nuestros Servicios</li>
                 <li className={styles.listItem}>Planes y Precios</li>
                 <li className={styles.listItem}>Contacto</li>
