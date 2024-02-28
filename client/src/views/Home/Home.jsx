@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { HiOutlinePlusCircle } from "react-icons/hi";
 import Www from "../../assets/www.jpg";
 import Connect from "../../components/connect/Connect";
@@ -5,6 +6,12 @@ import HiringForm from "../../components/hiringForm/HiringForm";
 import styles from "./Home.module.css";
 
 function Home() {
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate("/services");
+  };
+
   return (
     <>
       <section className={styles.firstSection}>
@@ -16,7 +23,7 @@ function Home() {
             Internet y Televisión HD Por Fibra Óptica
           </p>
           <div className={styles.buttonContainer}>
-            <button className={styles.textButton}>
+            <button className={styles.textButton} onClick={handleNavigate}>
               <HiOutlinePlusCircle />
               <p>MÁS INFORMACIÓN AQUÍ</p>
             </button>

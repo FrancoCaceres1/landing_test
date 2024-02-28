@@ -1,0 +1,59 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../assets/orange.jpg);
+}
+
+.titleContainer {
+  padding: 5rem 3rem;
+  width: 100%;
+  backdrop-filter: blur(2px);
+}
+
+.title {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #f2f2f2;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.firstSection {
+  border-bottom: 2px solid #e49400;
+}
+
+.firstSubtitleContainer {
+  padding: 4rem 0.5rem;
+  border-bottom: 2px solid #e49400;
+}
+
+.firstSubtitle {
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1;
+  color: #e49400;
+  text-align: center;
+}
+
+.secondSubtitleContainer {
+  padding: 4rem 0.5rem;
+  border-bottom: 2px solid #e49400;
+}
+
+.secondSubtitle {
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1;
+  color: #e49400;
+  text-align: center;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0.5rem;
+}
