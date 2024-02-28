@@ -4,9 +4,8 @@
   align-items: flex-start;
   justify-content: center;
   gap: 1rem;
-  background-image: url(../../assets/orange.jpg);
-  background-position: center center;
   padding: 1rem;
+  backdrop-filter: blur(3px);
 }
 
 .titleContainer {
@@ -37,8 +36,7 @@
   align-items: flex-start;
   justify-content: center;
   gap: 1rem;
-  background-color: rgba(156, 78, 4, 0.63);
-  padding: 2rem;
+  padding: 2rem 1rem;
   width: 100%;
 }
 
@@ -99,6 +97,7 @@
   color: #f2f2f2;
   font-weight: 600;
   transition: 0.2s ease;
+  margin-top: 1rem;
 }
 
 .sendButton:hover {

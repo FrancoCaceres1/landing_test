@@ -42,7 +42,9 @@ function Home() {
         </div>
       </section>
       <Connect />
-      <HiringForm />
+      <div className={styles.formContainer}>
+        <HiringForm />
+      </div>
     </>
   );
 }

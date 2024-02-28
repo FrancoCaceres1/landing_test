@@ -127,3 +127,9 @@
 .secondButton:hover {
   background-color: rgb(148, 96, 0);
 }
+
+.formContainer {
+  margin-top: 2rem;
+  background-image: url(../../assets/orange.jpg);
+  background-position: center center;
+}
