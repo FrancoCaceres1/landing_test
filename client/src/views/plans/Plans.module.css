@@ -20,12 +20,12 @@
 }
 
 .firstSection {
-  border-bottom: 2px solid #e49400;
+  border-bottom: 2px solid #EE7F00;
 }
 
 .firstSubtitleContainer {
   padding: 4rem 0.5rem;
-  border-bottom: 2px solid #e49400;
+  border-bottom: 2px solid #EE7F00;
   -webkit-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.75);
@@ -35,13 +35,13 @@
   font-size: 1.8rem;
   font-weight: 900;
   line-height: 1;
-  color: #e49400;
+  color: #EE7F00;
   text-align: center;
 }
 
 .secondSubtitleContainer {
   padding: 4rem 0.5rem;
-  border-bottom: 2px solid #e49400;
+  border-bottom: 2px solid #EE7F00;
   -webkit-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.75);
@@ -51,15 +51,16 @@
   font-size: 1.8rem;
   font-weight: 900;
   line-height: 1;
-  color: #e49400;
+  color: #EE7F00;
   text-align: center;
 }
 
 .cardsContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
   padding: 2rem 0.5rem;
 }

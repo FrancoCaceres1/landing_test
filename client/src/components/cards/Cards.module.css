@@ -2,6 +2,8 @@
   padding: 2.5rem;
   color: #f2f2f2;
   overflow: hidden;
+  max-width: 22.625rem;
+  min-height: 15.813rem;
 }
 
 .container {
